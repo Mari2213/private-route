@@ -1,8 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Login from "./pages/Login.tsx";
+
 function App() {
   return (
     <>
-      {" "}
-      <h1 className={""}>OPA!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   );
 }
